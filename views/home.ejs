@@ -1,0 +1,20 @@
+<%- include('./partials/header') %>
+
+<h1>Home</h1>
+<p> <%= content %> </p>
+
+<section class="container-fluid">
+    <% if (postSection) { %>
+    <% postSection.forEach(post => { %>
+    <div>
+        <h3> <%= post.title %> </h3>
+        <span> <%=post.body.slice(0, 150) + '...' %> </span>
+        <a role="button" class="btn btn-primary" href=<%='/post/'+ post.link %>>Read
+            More</a>
+    </div>
+    <% }) %>
+    <% } %>
+
+</section>
+
+<%- include('./partials/footer') %>

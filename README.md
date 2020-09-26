@@ -1,0 +1,1 @@
+Simple blog website built with EJS, NodeJS, ExpressJS, MongoDB and Mongoose.

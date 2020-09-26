@@ -1,0 +1,15 @@
+<%- include('./partials/header') %>
+
+<section class="container-fluid">
+    <form action=<%="/post/"+ clickedPost.link%> method="post">
+        <div>
+            <h2> <%= clickedPost.title %> </h2> <button style="margin-top: 15px;margin-bottom: 30px;"
+                class='btn btn-primary' type="submit">Delete
+                Post</button>
+            <p> <%= clickedPost.body %> </p>
+        </div>
+
+    </form>
+</section>
+
+<%- include('./partials/footer') %>
